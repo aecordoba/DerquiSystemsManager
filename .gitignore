@@ -1,6 +1,6 @@
 workspace/DerquiSystemsManagerUserInterface/target/
 workspace/DerquiSystemsManagerUserInterface/logs/
-workspace/DerquiSystemsManagerUserInterface/*.xlsx/
+workspace/DerquiSystemsManagerUserInterface/*.xlsx
 workspace/AddressesTransponder/target/
 workspace/AddressesTransponder/logs/
 workspace/BroadbandTransponder/target/
