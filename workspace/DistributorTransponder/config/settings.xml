@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<comment>Distributor Transponder configuration file</comment>
+	<common-services>
+		<database>
+			<pool-size>2</pool-size>
+			<driver>com.mysql.cj.jdbc.Driver</driver>
+			<connection-string>jdbc:mysql://localhost:3306/ac1
+			</connection-string>
+		</database>
+		<excel-scanner>
+			<file-full-path>/home/adrian/Development/Derqui Systems Manager/data/PARES_act2019set.xls</file-full-path>
+			<sheet-name>TELEFONOScPARES</sheet-name>
+		</excel-scanner>
+	</common-services>
+	<subscribers>
+		<files-handler>
+			<input-directory>
+				/home/adrian/Development/Derqui Systems Manager/data/Subscribers/
+			</input-directory>
+		</files-handler>
+	</subscribers>
+	<distributor-transponder>
+		<country-code>
+			<code>54</code>
+			<area-code>
+				<code>230</code>
+			</area-code>
+		</country-code>
+	</distributor-transponder>
+</config>

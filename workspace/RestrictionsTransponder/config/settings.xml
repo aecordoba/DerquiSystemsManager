@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<comment>Broadband Transponder configuration file</comment>
+	<common-services>
+		<database>
+			<pool-size>2</pool-size>
+			<driver>com.mysql.cj.jdbc.Driver</driver>
+			<connection-string>jdbc:mysql://localhost:3306/ac1
+			</connection-string>
+		</database>
+		<excel-scanner>
+			<file-full-path>/home/adrian/Development/Derqui Systems Manager/data/RESTRICCIONES22.xls</file-full-path>
+			<sheet-name>Hoja1</sheet-name>
+		</excel-scanner>
+	</common-services>
+</config>

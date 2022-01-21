@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<comment>Derqui Systems Manager configuration file</comment>
+	<common-services>
+		<database>
+			<pool-size>3</pool-size>
+			<driver>com.mysql.cj.jdbc.Driver</driver>
+			<connection-string>jdbc:mysql://localhost:3306/dsmv4
+			</connection-string>
+		</database>
+	</common-services>
+	<derqui-systems-manager>
+		<default-subscriber-data>
+			<type>individual</type>
+			<state>enabled</state>
+			<termination-restriction>0</termination-restriction>
+			<origination-restriction>12</origination-restriction>
+		</default-subscriber-data>
+	</derqui-systems-manager>
+</config>

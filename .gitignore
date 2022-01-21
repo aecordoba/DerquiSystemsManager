@@ -1,0 +1,15 @@
+workspace/DerquiSystemsManagerUserInterface/target/
+workspace/DerquiSystemsManagerUserInterface/logs/
+workspace/DerquiSystemsManagerUserInterface/*.xlsx/
+workspace/AddressesTransponder/target/
+workspace/AddressesTransponder/logs/
+workspace/BroadbandTransponder/target/
+workspace/BroadbandTransponder/logs/
+workspace/DerquiSystemsManagerDataAccess/target/
+workspace/DistributorTransponder/target/
+workspace/DistributorTransponder/logs/
+workspace/DSMMassivePopulation/target/
+workspace/RestrictionsTransponder/target/
+workspace/RestrictionsTransponder/logs/
+workspace/.metadata
+

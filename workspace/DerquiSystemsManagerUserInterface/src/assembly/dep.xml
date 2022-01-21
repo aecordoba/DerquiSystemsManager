@@ -1,0 +1,63 @@
+<assembly>
+	<id>bin</id>
+	<!-- Specifies that our binary distribution is a zip package -->
+	<formats>
+		<format>zip</format>
+		<format>tar.gz</format>
+	</formats>
+	<includeBaseDirectory>true</includeBaseDirectory>
+	<baseDirectory>DerquiSystemsManager</baseDirectory>
+
+	<!-- Adds dependencies to lib directory -->
+	<dependencySets>
+		<dependencySet>
+			<useProjectArtifact>false</useProjectArtifact>
+			<outputDirectory>lib</outputDirectory>
+			<unpack>false</unpack>
+			<!-- <excludes> <exclude>*:DerquiSystemsManager*:*</exclude> </excludes> -->
+		</dependencySet>
+	</dependencySets>
+
+	<fileSets>
+		<!-- Adds configuration files to the config directory -->
+		<fileSet>
+			<directory>${project.basedir}/config</directory>
+			<outputDirectory>config</outputDirectory>
+			<includes>
+				<include>*</include>
+			</includes>
+		</fileSet>
+		<!-- Adds startup scripts to the root directory of package. -->
+		<fileSet>
+			<directory>${project.basedir}/src/scripts</directory>
+			<outputDirectory></outputDirectory>
+			<includes>
+				<include>Derqui Systems Manager.sh</include>
+			</includes>
+			<fileMode>0755</fileMode>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/src/scripts</directory>
+			<outputDirectory></outputDirectory>
+			<includes>
+				<include>Derqui Systems Manager.bat</include>
+			</includes>
+		</fileSet>
+		<!-- Adds icons files to the icons directory -->
+		<fileSet>
+			<directory>${project.basedir}/icons</directory>
+			<outputDirectory>icons</outputDirectory>
+			<includes>
+				<include>*</include>
+			</includes>
+		</fileSet>
+		<!-- Adds jar files to the bin directory -->
+		<fileSet>
+			<directory>${project.build.directory}</directory>
+			<outputDirectory>bin</outputDirectory>
+			<includes>
+				<include>*.jar</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>
